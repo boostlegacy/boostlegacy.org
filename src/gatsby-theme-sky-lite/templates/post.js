@@ -57,10 +57,11 @@ export default function PostTemplate({ data, pageContext }) {
     body
   } = mdx;
   const { previousPath, nextPath, postDate } = pageContext;
+  console.log(data)
 
   return (
     <Layout>
-      <SEO title={title} image={featuredImage.childImageSharp.src} description={mdx} article={true} />
+      <SEO title={title} image={featuredImage.childImageSharp.src} description={mdx.exceprt} />
       <Box flexGrow={1} width="100%" maxWidth={960} marginX="auto">
         <Box padding={2}>
           <Box marginBottom={1}>
@@ -122,6 +123,7 @@ export default function PostTemplate({ data, pageContext }) {
 export const pageQuery = graphql`
   query($postId: String!) {
     mdx(frontmatter: { id: { eq: $postId } }) {
+      excerpt(pruneLength: 250)
       body
       frontmatter {
         id
