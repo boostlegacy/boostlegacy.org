@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Sky Lite`,
-    siteUrl: `https://yoursite.com`,
-    description: `A lightweight GatsbyJS starter base with Material-UI and MDX Markdown support.`,
+    title: `Boost Legacy`,
+    siteUrl: `https://boostlegacy.org`,
+    description: `More coming soon...`,
     components: {
       appbar: {
         position: "sticky",
@@ -18,59 +18,17 @@ module.exports = {
         ]
       },
       footer: {
-        copyright: "yoursite.com",
+        copyright: "boostlegacy.org",
         columns: [
           {
-            heading: "Column 1",
+            heading: "Home",
             links: [
               {
-                title: "Link 1",
-                url: "#"
-              },
-              {
-                title: "Link 2",
-                url: "#"
-              },
-              {
-                title: "Link 3",
-                url: "#"
+                title: "Boost Legacy",
+                url: "/"
               }
             ]
           },
-          {
-            heading: "Column 2",
-            links: [
-              {
-                title: "Link A",
-                url: "#"
-              },
-              {
-                title: "Link B",
-                url: "#"
-              },
-              {
-                title: "Link C",
-                url: "#"
-              }
-            ]
-          },
-          {
-            heading: "Column 3",
-            links: [
-              {
-                title: "Link x",
-                url: "#"
-              },
-              {
-                title: "Link y",
-                url: "#"
-              },
-              {
-                title: "Link z",
-                url: "#"
-              }
-            ]
-          }
         ]
       }
     },

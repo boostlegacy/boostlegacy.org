@@ -66,7 +66,7 @@ export default function HomeTemplate({
           paddingBottom={12}
           paddingX={8}
           style={{
-            backgroundColor: theme.palette.primary.main,
+            backgroundImage: 'url("/field.jpg")',
             color: theme.palette.common.white,
             clipPath: "polygon(0 0, 100% 0, 100% 60%, 0% 100%)",
             "-webkit-clip-path": "polygon(0 0, 100% 0, 100% 60%, 0% 100%)"
@@ -74,7 +74,7 @@ export default function HomeTemplate({
         >
           <Box marginBottom={4}>
             <Typography
-              color="inherit"
+              color="secondary"
               variant="h2"
               style={{
                 fontWeight: "bold",

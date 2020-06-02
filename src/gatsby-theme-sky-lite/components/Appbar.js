@@ -104,7 +104,7 @@ export default ({ elevation = 1, onToggleDrawer }) => {
               </ButtonBase>
             </Box>
             {// Display the appbar action links if the media query breakpoint is larger than Xs.
-            !isXs && <AppBarLinks links={links} />}
+            /*!isXs && <AppBarLinks links={links} />*/}
           </Toolbar>
         </AppBar>
       )}
