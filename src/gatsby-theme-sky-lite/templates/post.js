@@ -33,7 +33,7 @@ const Tags = ({ tags }) => {
       {tags.map(tag => {
         return (
           <Chip
-            color="primary"
+            color="secondary"
             variant="outlined"
             classes={{ root: classes.chip }}
             label={tag}
@@ -71,7 +71,7 @@ export default function PostTemplate({ data, pageContext }) {
             >
               {title}
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body2" color="textSecondary">
               {moment(postDate).format("LL")}
             </Typography>
             <Tags tags={tags} />
@@ -80,9 +80,11 @@ export default function PostTemplate({ data, pageContext }) {
             fluid={featuredImage.childImageSharp.fluid}
             style={{ borderRadius: 2 }}
           />
-          <article className={classes.article}>
-            <MDXRenderer>{body}</MDXRenderer>
-          </article>
+          <Typography color="textSecondary">
+            <article className={classes.article}>
+              <MDXRenderer>{body}</MDXRenderer>
+            </article>
+          </Typography>
           <Box display="flex">
             <Box flexGrow={1}>
               {previousPath && (
@@ -90,7 +92,7 @@ export default function PostTemplate({ data, pageContext }) {
                   component={Link}
                   to={previousPath}
                   variant="outlined"
-                  color="secondary"
+                  color="textPrimary"
                 >
                   <FaChevronLeft size={8} />
                   <Box marginLeft={0.5}>Previous</Box>
@@ -102,7 +104,7 @@ export default function PostTemplate({ data, pageContext }) {
                 component={Link}
                 to={nextPath}
                 variant="outlined"
-                color="secondary"
+                color="textPrimary"
               >
                 <Box marginRight={0.5}>Next</Box>
                 <FaChevronRight size={8} />

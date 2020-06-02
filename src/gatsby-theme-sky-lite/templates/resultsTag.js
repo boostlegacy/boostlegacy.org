@@ -66,7 +66,7 @@ export default function ResultsTagTemplate({
           <Box textAlign="center" padding={4}>
             <Box marginBottom={4}>
               <Typography
-                color="primary"
+                color="textPrimary"
                 variant="h3"
                 style={{
                   fontWeight: "bold",
