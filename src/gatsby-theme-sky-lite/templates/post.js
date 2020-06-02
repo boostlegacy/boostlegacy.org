@@ -60,7 +60,7 @@ export default function PostTemplate({ data, pageContext }) {
 
   return (
     <Layout>
-      <SEO title={title} image={featuredImage} article={mdx} />
+      <SEO title={title} image={featuredImage.childImageSharp.src} description={mdx} article={true} />
       <Box flexGrow={1} width="100%" maxWidth={960} marginX="auto">
         <Box padding={2}>
           <Box marginBottom={1}>
