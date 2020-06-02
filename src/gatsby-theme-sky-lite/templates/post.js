@@ -61,7 +61,7 @@ export default function PostTemplate({ data, pageContext }) {
 
   return (
     <Layout>
-      <SEO title={title} image={featuredImage.childImageSharp.src} description={"how many characters can i use here my dude idk but it should be dope or something probably only 255 but we need more charecters........................................................................................................................aoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeuaoeu0...............................................................................................................00000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222222222222223333333333333333333333333333333333333333333333333333333333333333333333333"} />
+      <SEO title={title} image={featuredImage.childImageSharp.src} description={mdx.excerpt} />
       <Box flexGrow={1} width="100%" maxWidth={960} marginX="auto">
         <Box padding={2}>
           <Box marginBottom={1}>
