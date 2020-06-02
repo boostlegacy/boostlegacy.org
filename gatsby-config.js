@@ -3,6 +3,9 @@ module.exports = {
     title: `Boost Legacy`,
     siteUrl: `https://boostlegacy.org`,
     description: `More coming soon...`,
+    twitterUsername: '@boostlegacy',
+    titleTemplate: 'Boost Legacy - $s',
+    image: '/bl.png',
     components: {
       appbar: {
         position: "sticky",

@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import moment from "moment";
 import { Box, Button, Chip, Typography } from "@material-ui/core";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import SEO from "../components/Seo";
 
 const useStyles = makeStyles(() => ({
   article: {
@@ -59,6 +60,7 @@ export default function PostTemplate({ data, pageContext }) {
 
   return (
     <Layout>
+      <SEO title={title} image={featuredImage} article={mdx} />
       <Box flexGrow={1} width="100%" maxWidth={960} marginX="auto">
         <Box padding={2}>
           <Box marginBottom={1}>
