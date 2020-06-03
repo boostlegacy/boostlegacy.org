@@ -83,7 +83,7 @@ export default ({ elevation = 1, onToggleDrawer }) => {
       }) => (
         <AppBar color="primary" position={position} elevation={elevation}>
           <Toolbar>
-            {isXs && (
+            {false && (
               <IconButton
                 edge="start"
                 className={classes.menuButton}
