@@ -2,7 +2,7 @@
 id: "boost-legacy-is-back"
 title: "Boost Legacy Is Back!"
 author: pfeiferj
-featuredImage: featured.jpg
+featuredImage: "BL Community.png"
 tags: [news]
 ---
 
