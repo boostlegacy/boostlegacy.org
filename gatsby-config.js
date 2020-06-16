@@ -2,23 +2,23 @@ module.exports = {
   siteMetadata: {
     title: `Boost Legacy`,
     siteUrl: `https://boostlegacy.org`,
-    description: `More coming soon...`,
-    twitterUsername: '@boostlegacy',
-    titleTemplate: 'Boost Legacy - $s',
-    image: '/bl.png',
+    description: `Your Community, Your Legacy.`,
+    twitterUsername: "@boostlegacy",
+    titleTemplate: "Boost Legacy - $s",
+    image: "/bl.png",
     components: {
       appbar: {
         position: "sticky",
         links: [
           {
             title: "Doc 1",
-            url: "/doc1"
+            url: "/doc1",
           },
           {
             title: "Doc 2",
-            url: "/doc2"
-          }
-        ]
+            url: "/doc2",
+          },
+        ],
       },
       footer: {
         copyright: "boostlegacy.org",
@@ -28,21 +28,21 @@ module.exports = {
             links: [
               {
                 title: "Boost Legacy",
-                url: "/"
-              }
-            ]
+                url: "/",
+              },
+            ],
           },
-        ]
-      }
+        ],
+      },
     },
     templates: {
       home: {
         totalPosts: 3,
-        template: "home"
+        template: "home",
       },
       pages: {
         path: "/content/pages/",
-        template: "page"
+        template: "page",
       },
       posts: {
         path: "/content/posts/",
@@ -55,16 +55,16 @@ module.exports = {
             totalPosts: 3,
             pagination: {
               template: "resultsTag",
-              resultsPerPage: 6
-            }
-          }
+              resultsPerPage: 6,
+            },
+          },
         },
         pagination: {
           template: "resultsAll",
-          resultsPerPage: 6
-        }
-      }
-    }
+          resultsPerPage: 6,
+        },
+      },
+    },
   },
   plugins: [
     { resolve: `gatsby-theme-sky-lite` },
@@ -77,9 +77,9 @@ module.exports = {
         background_color: `rebeccapurple`,
         theme_color: `rebeccapurple`,
         display: `standalone`,
-        icon: `src/images/favicon.png`
-      }
+        icon: `src/images/favicon.png`,
+      },
     },
-    `gatsby-plugin-react-helmet`
-  ]
+    `gatsby-plugin-react-helmet`,
+  ],
 };
