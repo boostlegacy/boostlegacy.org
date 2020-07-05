@@ -46,9 +46,11 @@ export default function PageTemplate({ data }) {
             fluid={featuredImage.childImageSharp.fluid}
             style={{ borderRadius: 2 }}
           />
-          <article className={classes.article}>
-            <MDXRenderer>{body}</MDXRenderer>
-          </article>
+          <Typography color="textSecondary">
+            <article className={classes.article}>
+              <MDXRenderer>{body}</MDXRenderer>
+            </article>
+          </Typography>
         </Box>
       </Box>
     </Layout>
