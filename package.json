@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "gatsby": "^2.17.11",
-    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-manifest": "^2.12.0",
     "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-theme-sky-lite": "^1.3.1",
+    "gatsby-theme-sky-lite": "github:pfeiferj/gatsby-theme-sky-lite",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "styled-components": "^4.4.1"
